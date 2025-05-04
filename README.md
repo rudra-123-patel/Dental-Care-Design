@@ -14,4 +14,4 @@ HTML, CSS, JS
 
 
 ## Demo
-![]("ScreenRecord.gif")
+![](https://github.com/rudra-123-patel/Dental-Care-Design/blob/main/ScreenRecord.gif)
