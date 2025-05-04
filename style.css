@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+#nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+#nav-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav h3 {
+  font-size: 17px;
+  border: 1.5px solid black;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+#nav i {
+  font-size: 16px;
+  border: 1.5px solid black;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+#nav h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+#nav button {
+  padding: 7px 12px;
+  border-radius: 50px;
+  border: 1.5px solid black;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
+}
+
+#nav-part3 #btn2 {
+  border: none;
+  background-color: orangered;
+  color: white;
+}
+
+#main > h1 {
+  font-size: 180px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+#main img {
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 5%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+#main_img #img1 {
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+#main_img #img2 {
+  transform: translate(-50%, -50%) rotate(-20deg);
+}
+#main_img #img3 {
+  transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+#btm-left {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: 16px;
+}
+
+.about {
+  font-size: 150px;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  background-color: antiquewhite;
+  padding: 2% 4%;
+}
+
+.circle-button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.circle-button {
+  background-color: #ff4a2d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.2;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.circle-button-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 70px;
+  border: 2px solid #ff4a2d;
+  border-top: none;
+  border-radius: 0 0 100px 100px;
+  z-index: 1;
+}
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 74, 45, 0.8);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.contact {
+  font-size: 100px;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+  background-color: white;
+  padding: 2% 4%;
+  display: flex;
+}
+
+.img_area {
+  height: 500px;
+  width: 500px;
+  padding: 2%;
+  margin-left: 5%;
+}
+
+.img_area img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  border-radius: 5%;
+}
+
+.text_area button {
+  background-color: #ff4a2d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+}
+
